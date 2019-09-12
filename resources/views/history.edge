@@ -1,0 +1,95 @@
+@layout('layouts.master')
+
+@section('body')
+@super()
+
+@set('title', 'AdonisJs 更新历史')
+@set('description', 'AdonisJs 中文网站的更新历史记录说明')
+<style>
+	.items {
+		padding: 2.2em 1em 2.6em;
+	}
+	.items h1 {
+		font-size: 3em;
+		margin-bottom: 0.6em;
+	}
+	.items h1 span {
+		font-size: 0.36em;
+		font-weight: normal;
+		margin-left: 2em;
+	}
+	.items h1 a {
+		color: #fb2f51;
+	}
+	.items h3 {
+		margin-bottom: 2em;
+	}
+	.item {
+		margin-bottom: 3em;
+	}
+	.item:last-child {
+		margin-bottom: 0;
+	}
+	.item h2 {
+		margin-bottom: 1em;
+	}
+	.item p {
+		margin-bottom: 0.6rem;
+	}
+	.item ul {
+		list-style: decimal;
+		padding: 0 1.7em;
+	}
+	.item i {
+		background: #f0f0f0;
+		font-style: normal;
+		margin: 0 10px;
+		display: inline-block;
+		padding: 2px 3px;
+		line-height: 1;
+		font-size: 0.8em;
+	}
+</style>
+<div class="container">
+	<div class="items">
+
+		<h1>翻译更新历史<span> — Translated by <a href="mailto:guoshuohui@163.com>">ShuoHui Guo</a></span></h1>
+		<h3>前缀说明：A-新增、U-更新、F-修复</h3>
+		
+		<div class="item">
+			<h2> --- 2019-06-22 --- </h2>
+			<ul>
+				<li><i>A</i>4.1版本 指南 - 介绍 -《关于 AdonisJs》</li>
+				<li><i>A</i>4.1版本 指南 -介绍 -《从4.0升级》</li>
+				<li><i>A</i>4.1版本 指南 -介绍 -《贡献指南》</li>
+				<li><i>A</i>4.1版本 指南 -核心概念 -《请求生命周期》</li>
+				<li><i>A</i>4.1版本 指南 -核心概念 -《IoC 容器》</li>
+				<li><i>A</i>4.1版本 指南 -核心概念 -《服务提供者》</li>
+				<li><i>A</i>4.1版本 指南 -核心概念 -《启动装置》</li>
+				<li><i>A</i>4.1版本 指南 -起步 -《安装》</li>
+				<li><i>A</i>4.1版本 指南 -起步 -《配置》</li>
+				<li><i>A</i>4.1版本 指南 -起步 -《目录结构》</li>
+				<li><i>A</i>4.0版本 指南目录</li>
+			</ul>
+		</div>
+		
+		<div class="item">
+			<h2> --- 2019-06-15 --- </h2>
+			<ul>
+				<li><i>A</i>首页、快速开始、赞助商</li>
+				<li><i>A</i>社区 -《官方包》</li>
+				<li><i>A</i>社区 -《屏幕录像》</li>
+				<li><i>A</i>专题 -《Nginx 代理》</li>
+				<li><i>A</i>专题 -《使用 .dev 域名》</li>
+				<li><i>A</i>专题 -《前端资源管理》</li>
+				<li><i>A</i>专题 -《为什么要安装 Adonis?》</li>
+				<li><i>A</i>专题 -《使用 Https》</li>
+				<li><i>A</i>专题 -《Nginx 代理》</li>
+				<li><i>A</i>4.1版本 指南目录</li>
+				<li><i>A</i>3.2版本沿用 adonis-china 版本，同时修正一些漏译的地方</li>
+			</ul>
+		</div>
+
+	</div>
+</div>
+@endsection

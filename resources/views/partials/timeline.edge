@@ -1,0 +1,26 @@
+<ul class="timeline">
+
+	@component('components.timeline-item', title = '安装', isWysiwyg = true)
+	<pre
+		class="highlight line-numbers language-javascript is-small"><code>npm i -g @adonisjs/cli\nadonis new yardstick\ncd yardstick\nadonis serve --dev</code></pre>
+	@endcomponent
+
+	@component('components.timeline-item', title = '命令', isWysiwyg = true)
+	<p> 要获取用于创建控制器、模型等的命令列表，请执行以下操作：</p>
+	<pre class="highlight line-numbers language-javascript is-small"><code>adonis --help</code></pre>
+	@endcomponent
+
+	@component('components.timeline-item', title = '帮助')
+	<ul>
+		<li>
+			在<a href="https://github.com/adonisjs" target="_blank"> github </a>上报告错误
+		</li>
+		<li>
+			在<a href="https://forum.adonisjs.com/" target="_blank"> 论坛 </a>上讨论问题和分享想法
+		</li>
+		<li>
+			在 <a href="https://twitter.com/adonisframework" target="_blank"> twitter </a>上保持更新
+		</li>
+	</ul>
+	@endcomponent
+</ul>

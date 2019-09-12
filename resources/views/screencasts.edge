@@ -1,0 +1,122 @@
+@layout('layouts.master')
+
+@section('body')
+@super()
+
+@set('title', 'AdonisJs 屏幕录像')
+@set('description', 'AdonisJs 入门教学视频')
+
+<div class="screencasts-container">
+	<div class="shrinked-container splash">
+		<h1 class="title"> 观看 和 学习 </h1>
+		<h2 class="subtitle is-5">
+			以下为社区驱动的屏幕录像列表，可以帮助你使用该框架和了解一些简洁而优雅的编程技巧
+		</h2>
+	</div>
+
+	<div class="screencasts-list">
+		<div class="container">
+			<div class="columns is-multiline">
+				<div class="column is-4">
+					@component('components.screencast',
+					image = 'https://i.ytimg.com/vi/dfEZlcPvez8/hqdefault.jpg',
+					position = '0px -31px',
+					title = '',
+					url = 'https://youtu.be/dfEZlcPvez8'
+					)
+					<p>
+						一个3小时的视频，利用AdonisJs和Vue构建一个Todo列表应用程序。
+					</p>
+					@endcomponent
+				</div>
+
+				<div class="column is-4">
+					@component('components.screencast',
+					image = 'https://i.vimeocdn.com/video/676185529.jpg?mw=1500&mh=3000&q=70',
+					position = '-25px 16px',
+					title = 'Adonis 4, From Scratch to Sass',
+					url = 'https://www.bahdcasts.com/courses/adonis-4-from-scratch-to-saas'
+					)
+					<p>
+						一系列适合初学者的屏幕录像，让你可以从零开始创建一个实际工作的应用程序
+					</p>
+					@endcomponent
+				</div>
+
+				<div class="column is-4">
+					@component('components.screencast',
+					image = 'http://res.cloudinary.com/adonisjs/image/upload/q_100/v1521629831/codecourse-adonis_nylt0m.jpg',
+					position = '50% 50%',
+					url = 'https://www.codecourse.com/lessons/build-a-forum-with-adonis-js'
+					)
+					<p>
+						codecourse.com上的高级课程, 演示了如何构建一个论坛。该课程有 <strong>37 个视频</strong>，
+						涵盖了许多方面的知识
+					</p>
+					@endcomponent
+				</div>
+
+				<div class="column is-4">
+					@component('components.screencast',
+					image = 'https://i.ytimg.com/vi/2oXpBK2iNQU/hqdefault.jpg',
+					position = '50% 61%',
+					url = 'https://www.youtube.com/playlist?list=PLillGF-RfqbY6wY9yZjCpSMzvhn-icuG6'
+					)
+					<p>
+						Traversy Media 上一个热门的课程，创建一个博客引擎的同时，涵盖了框架的基础知识
+					</p>
+					@endcomponent
+				</div>
+
+				<div class="column is-4">
+					@component('components.screencast',
+					image = 'https://i.ytimg.com/vi/_zUF_mhubL0/maxresdefault.jpg',
+					position = '50% 0',
+					url = 'https://youtu.be/_zUF_mhubL0'
+					)
+					<p>
+						通清晰易懂的语法，让eager-loading（贪婪加载）变得更加简单方便
+					</p>
+					@endcomponent
+				</div>
+
+				<div class="column is-4">
+					@component('components.screencast',
+					image = 'https://i.ytimg.com/vi/5wzcRtrRVd4/maxresdefault.jpg',
+					position = '50% 50%',
+					url = 'https://www.youtube.com/playlist?list=PLoCq0WM_wHG-rFQEsShMQkgGcTO1Hmnvx'
+					)
+					<p>
+						学习如何通过遵循官方文档的同时，来创建一个API服务器
+					</p>
+					@endcomponent
+				</div>
+
+				<div class="column is-4">
+					@component('components.screencast',
+					image = 'https://i.ytimg.com/vi/bI49nqFrm6o/maxresdefault.jpg',
+					position = '50% 50%',
+					url = 'https://www.youtube.com/playlist?list=PL9gT3zlT0C1NgCLkyMf-EL9anST6Tl6xW'
+					)
+					<p>
+						该系列介绍了如何通过auth层来实现用户注册、登录和重置密码的流程
+					</p>
+					@endcomponent
+				</div>
+
+				<div class="column is-4">
+					@component('components.screencast',
+					image = 'https://i.ytimg.com/vi/yTiZrOluehU/maxresdefault.jpg',
+					position = '50% 0',
+					url = 'https://youtu.be/yTiZrOluehU'
+					)
+					<p>
+						一系列的屏幕录像，通过深入挖掘解释了IoC container 和 Service providers是如何在底层源码中工作的
+					</p>
+					@endcomponent
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+@endsection

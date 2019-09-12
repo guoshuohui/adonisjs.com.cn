@@ -1,0 +1,3 @@
+[submodule "content"]
+	path = content
+	url = https://github.com/guoshuohui/adonisjs.com.cn-docs.git

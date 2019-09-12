@@ -1,0 +1,118 @@
+@layout('layouts.master')
+
+@section('body')
+@super()
+
+@set('title', 'AdonisJs 官方包')
+@set('description', 'AdonisJs 使用的所有官方包列表')
+
+<div class="packages-container">
+	<div class="shrinked-container splash">
+		<h1 class="title">欢迎来到这个家庭</h1>
+		<h2 class="subtitle is-5">
+			AdonisJs 拥有由多种工具和库所组成的丰富的生态系统，你在项目中可以随意免费的使用它们，因为它们都是遵循MIT许可证发布的。
+		</h2>
+	</div>
+
+	<div class="featured-packages">
+		<div class="container">
+			<div class="apps-list columns is-multiline">
+				<div class="column is-4">
+					<div class="app-card">
+						<h3 class="is-size-5"> <a href="http://edge.adonisjs.com" target="_blank"> Edge </a> </h3>
+						<p> 一个让人神清气爽的 Node.js 模板引擎</p>
+					</div>
+				</div>
+				<div class="column is-4">
+					<div class="app-card">
+						<h3 class="is-size-5"> <a href="http://indicative.adonisjs.com" target="_blank"> Indicative </a> </h3>
+						<p> 简单而又直观的Node.js辅助验证库 </p>
+					</div>
+				</div>
+
+				<div class="column is-4">
+					<div class="app-card">
+						<h3 class="is-size-5"> <a href="https://github.com/adonisjs/ace" target="_blank"> Ace </a> </h3>
+						<p> 让编写命令行应用变得更加人性化 </p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="all-packages">
+		<div class="shrinked-container">
+			<h3 class="is-size-4"> 其他所有包 </h3>
+			<div class="packages-list">
+				<div class="app-card is-row">
+					<h3 class="is-size-5"> <a href="https://github.com/poppinss/node-req" target="_blank"> node-req </a>
+					</h3>
+					<p> 一个让本地 HTTP <code>req</code> 对象变得更有用的I/O模块。</p>
+				</div>
+
+				<div class="app-card is-row">
+					<h3 class="is-size-5"> <a href="https://github.com/poppinss/node-cookie" target="_blank"> node-cookie </a>
+					</h3>
+					<p> 在HTTP服务器上使用cookie. 支持 <strong>加密</strong> 和 <strong>签名的cookies</strong>. </p>
+				</div>
+
+				<div class="app-card is-row">
+					<h3 class="is-size-5"> <a href="https://github.com/poppinss/node-csp" target="_blank"> node-csp </a> </h3>
+					<p> 添加Csp头，以避免你的网页遭受XSS攻击 </p>
+				</div>
+
+				<div class="app-card is-row">
+					<h3 class="is-size-5"> <a href="https://github.com/poppinss/node-guard" target="_blank"> node-guard </a> </h3>
+					<p> 通用I/O模块，用于添加http headers，以保护您的网页免受恶意软件攻击。
+					</p>
+				</div>
+
+				<div class="app-card is-row">
+					<h3 class="is-size-5"> <a href="https://github.com/thetutlage/japa" target="_blank"> japa </a> </h3>
+					<p> Node.js嵌入式测试运行程序，你可以用它来构建自己的测试框架。</p>
+				</div>
+
+				<div class="app-card is-row">
+					<h3 class="is-size-5"> <a href="https://github.com/poppinss/macroable" target="_blank"> macroable </a> </h3>
+					<p> 对任意ES6类添加扩展宏和getter的支持。</p>
+				</div>
+
+				<div class="app-card is-row">
+					<h3 class="is-size-5"> <a href="https://github.com/poppinss/cli-step" target="_blank"> cli-step </a> </h3>
+					<p> 一个简单 UI-only 模块，让终端中可以显示动画步骤. 我们都是 ❤️ emojis。 </p>
+				</div>
+
+				<div class="app-card is-row">
+					<h3 class="is-size-5"> <a href="https://github.com/poppinss/youch" target="_blank"> youch </a> </h3>
+					<p> 漂亮的Node.js错误报告</p>
+				</div>
+
+				<div class="app-card is-row">
+					<h3 class="is-size-5"> <a href="https://github.com/poppinss/co-compose" target="_blank"> co-compose </a> </h3>
+					<p> 在你的应用中使用AdonisJs和Koa风格的中间件层 </p>
+				</div>
+
+				<div class="app-card is-row">
+					<h3 class="is-size-5"> <a href="https://github.com/poppinss/resetable" target="_blank"> resetable </a> </h3>
+					<p> 一个用于定义临时值，同时可以有条件地清除它们的套件 </p>
+				</div>
+
+				<div class="app-card is-row">
+					<h3 class="is-size-5"> <a href="https://github.com/poppinss/anchorify" target="_blank"> anchorify </a> </h3>
+					<p> 将URL转换为字符串内的锚标签。 </p>
+				</div>
+
+				<div class="app-card is-row">
+					<h3 class="is-size-5"> <a href="https://github.com/poppinss/haye" target="_blank"> haye </a> </h3>
+					<p> Haye是一个富有表现力的字符串语法，用于Javascript的Array / Object和Vice-Versa解析器 </p>
+				</div>
+
+				<div class="app-card is-row">
+					<h3 class="is-size-5"> <a href="https://github.com/poppinss/pope" target="_blank"> pope </a> </h3>
+					<p> 仅用于字符串的微模板引擎 </p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+@endsection

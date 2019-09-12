@@ -1,0 +1,71 @@
+<header>
+	<nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+		<div class="container">
+			<div class="navbar-brand">
+				<a class="navbar-item" href="/">
+					<img src="{{ assetsUrl('images/header-logo.svg') }}" width="120" height="33">
+				</a>
+
+				<button class="button navbar-burger">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button><!-- end burger menu icon -->
+			</div><!-- end navbar-brand -->
+
+			<div class="navbar-menu">
+				<div class="navbar-end">
+					<div class="field for-search">
+						<div class="control">
+							<input class="input is-primary" type="search" id="search" placeholder="Search docs" />
+						</div>
+					</div>
+
+					{{ navbarAnchor({ id: 'show-quick-i-modal', href: '#', title: '快速开始' }) }}
+					{{ navbarAnchor({ href: '/docs', title: '指南' }) }}
+					{{ navbarAnchor({ href: '/recipes', title: '专题' }) }}
+					{{ navbarAnchor({ href: '/history', title: '更新历史' }) }}
+					{{ navbarAnchor({ href: '/sponsors', title: '赞助商' }) }}
+
+					{{-- Since we need to type in multiple lines, we used @mustache tag over curly braces --}}
+					@mustache(navbarAnchor({
+					title: '社区',
+					childs: [
+					{
+					title: '官方包', href: '/packages'
+					},
+					{
+					title: '屏幕录像', href: '/screencasts'
+					},
+					{
+					title: 'Twitter', href: 'https://twitter.com/adonisframework'
+					},
+					{
+					title: 'Github', href: 'https://github.com/adonisjs'
+					},
+					{
+					title: 'Forum', href: 'https://forum.adonisjs.com'
+					},
+					{
+					title: 'Blog', href: 'https://adonisjs.svbtle.com'
+					},
+					{
+					title: 'Discord', href: 'https://discord.gg/vDcEjq6?'
+					},
+					{
+					title: 'Donate', href: 'https://www.patreon.com/adonisframework'
+					}
+					]
+					}))
+				</div>
+
+				<div class="is-hidden-touch">
+					<a class="header-icon github-icon" href="https://github.com/adonisjs" target="_blank" rel="noopener"
+						aria-label="GitHub">
+						<img width="20" height="20" src="{{ assetsUrl('images/github-logo.svg') }}">
+					</a>
+				</div>
+			</div>
+		</div>
+	</nav>
+</header>

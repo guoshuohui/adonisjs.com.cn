@@ -1,0 +1,66 @@
+@layout('layouts.master')
+
+@section('body')
+@super()
+
+@set('title', 'AdonisJs 支持者和赞助商')
+@set('description', '帮助 AdonisJs 成长的公司和个人名单')
+
+<div class="patrons-container">
+	<div class="shrinked-container splash">
+		<h1 class="title">赞助 AdonisJs开发</h1>
+		<h2 class="subtitle is-5">
+			AdonisJs 是一个拥有MIT许可证的开源框架。它可以被完全免费的使用！然而，构建和支持一个框架所付出的精力和努力是巨大的，你的贡献可以让我把所有时间都花在Adonis的工作上。
+		</h2>
+		<div class="enjoy-cta">
+			<p>
+				<a href="https://www.patreon.com/adonisframework" target="_blank"
+					class="button is-custom is-danger is-outlined">
+					到Patreon上捐赠
+					@inlineSvg('inline-svgs/arrow-right')
+				</a>
+			</p>
+		</div>
+	</div>
+
+	<div class="featured-patrons">
+		<div class="shrinked-container">
+			<h3 class="is-size-4"> 赞助商 </h3>
+			<div class="backers-list columns is-multiline">
+				<div class="column is-6">
+					<a class="app-card patron-card" href="https://scotch.io/courses?referrer=https://adonisjs.com"
+						target="_blank">
+						<div class="patron-graphic"
+							style="background-image: url('https://res.cloudinary.com/adonisjs/image/upload/q_100/v1530551277/scotch-io-sponsor_eoqeil.svg')">
+						</div>
+						<p> 参加scotch.io上手工制作的课程，让你的技术更上一层楼 </p>
+					</a>
+				</div>
+
+				<div class="column is-6">
+					<a class="app-card patron-card" href="https://yakaz.com/jobs?referrer=https://adonisjs.com" target="_blank">
+						<div class="patron-graphic"
+							style="background-image: url('https://res.cloudinary.com/adonisjs/image/upload/q_100/v1549561178/yakaz-adonis_yz1inv.png')">
+						</div>
+						<p> Yakaz可以帮助你在一个地方搜索来自7000多个本地分类网站的分类广告。 </p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="all-patrons">
+		<div class="shrinked-container">
+			<h3 class="is-size-4"> 其他所有支持者 </h3>
+			<p> 这里是所有相信AdonisJs并伸手支持过它的人</p>
+			<div class="backers-list">
+				@each(patron in patrons)
+				<a class="backer" href="{{ patron.url }}">
+					<img src="{{ patron.thumbUrl }}">
+				</a>
+				@endeach
+			</div>
+		</div>
+	</div>
+</div>
+@endsection

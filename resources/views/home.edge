@@ -1,0 +1,15 @@
+@layout('layouts.master')
+
+@section('body')
+@super()
+
+@set(
+'description',
+'AdonisJs是一个语法清新和优雅的Node.js Web框架。AdonisJs让你对编码充满信心，因为我们更加注重开发者在开发过程中的的喜悦和稳定性~'
+)
+
+@include('partials.splash')
+@include('partials.about')
+@include('partials.apps')
+@include('partials.patreon')
+@endsection
