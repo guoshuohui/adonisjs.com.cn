@@ -1,11 +1,21 @@
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
+const OptimizeCssnanoPlugin = require('@intervolga/optimize-cssnano-plugin');
 const path = require('path')
 const webpack = require('webpack')
 const extractSass = new ExtractTextPlugin('adonis.css')
 const WebpackShellPlugin = require('webpack-shell-plugin')
 
 const plugins = [
-  extractSass
+  extractSass,
+  new OptimizeCssnanoPlugin({
+    cssnanoOptions: {
+      preset: ['default', {
+        discardComments: {
+          removeAll: true,
+        },
+      }],
+    },
+  })
 ]
 
 /**
