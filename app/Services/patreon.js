@@ -6,7 +6,7 @@
 // const { join, basename } = use('path')
 // const chalk = use('chalk')
 const Helpers = use('Helpers')
-const patreon = use(Helpers._appRoot + '/patreon.json')
+const patreon = use(Helpers.appRoot('patreon.json'))
 
 // const CSVPATH = Helpers.tmpPath('uploads/members.csv')
 // const IMAGES_DIR = Helpers.publicPath('patrons')
