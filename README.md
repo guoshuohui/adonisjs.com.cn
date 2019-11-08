@@ -27,6 +27,13 @@ git submodule init
 git submodule update --remote
 ```
 
+确保submodule在master分支
+
+```
+cd content
+git checkout master
+```
+
 安装依赖
 
 ```
